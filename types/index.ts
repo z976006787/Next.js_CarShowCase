@@ -59,7 +59,7 @@ export interface CarProps {
   }
   
   export interface ShowMoreProps {
-    pageNumber: number;
+    limit: number;
     isNext: boolean;
   }
   

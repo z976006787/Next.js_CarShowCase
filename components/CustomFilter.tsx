@@ -20,7 +20,7 @@ export default function CustomFilter({ title, options }: CustomFilterProps) {
   };
 
   return (
-    <div className='w-fit'>
+    <div className='w-fit pl-3'>
       <Listbox
         value={selected}
         onChange={(e) => {
@@ -37,7 +37,7 @@ export default function CustomFilter({ title, options }: CustomFilterProps) {
           {/* Transition for displaying the options */}
           <Transition
             as={Fragment} // group multiple elements without introducing an additional DOM node i.e., <></>
-            leave='transition ease-in duration-100'
+            leave='transition ease-in duration-200'
             leaveFrom='opacity-100'
             leaveTo='opacity-0'
           >
