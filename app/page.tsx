@@ -7,7 +7,7 @@ import { fetchCars } from "@/utils";
 import { HomeProps } from '@/types'
 import { fuels,yearsOfProduction } from '@/constants'
 import ShowMore from '@/components/ShowMore'
-export default async function Home({ searchParams }) {
+export default async function Home({ searchParams }:HomeProps) {
 
   const allCars = await fetchCars({
     manufacturer: searchParams.manufacturer || "",

@@ -62,6 +62,8 @@ export interface CarProps {
     limit: number;
     isNext: boolean;
   }
+
+
   
   export interface SearchManuFacturerProps {
     manufacturer: string;
